@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        #wrap{
+            width:800px;
+            margin:0 auto;
+        }
+
+        #header{
+            border-bottom:1px solid #000000;
+        }
+
+        #history2::first-letter ,#history1::first-letter{
+            font-size:2em;
+        }
+
+        #history2::first-line, #history1::first-line {
+            font-weight:bold;
+            color:#00ffff;
+        }
+
+        #footer ul {
+            overflow:hidden;
+            border:dashed;
+            
+        }
+
+        #footer a::after{
+            content:'-'attr(href);
+
+        }
+        #footer li:not(.fa) {
+            background-color:yellow;
+        }
+        #content p:first-child::selection{
+            background-color:blue;
+            color:orange;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>설립개요</h1>
+        </div>
+        <div id="content">
+            <p>
+                중소기업 지원업무의 효율성을 확보하고 중소기없에 대한 기술, 경영, 인력
+            </p>
+            <p id="history2">
+                2014 04월 09일<br/>서울산업진흥원 사명변경 6월 30일
+            </p>
+            <p id="history1">
+                2013 01월 12일<br/>다누리 시민청 개관 05월6일 굼꾸는 청년가게
+            </p>
+
+        </div>
+        <div id="footer">
+            <ul>
+                <li class="fa"><a href="http://www.naver.com" target="_blank">네이버</a></li>
+                <li><a href="http://www.google.com" target="_blank">구글</a></li>
+                <li class="fa"><a href="http://www.yahoo.com" target="_blank">야후</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
